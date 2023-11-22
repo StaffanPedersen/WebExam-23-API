@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "ho+SdkrnatJ4v3yYD8I7ces7cvchJog/nGfcrWSj+Aw=",
+  "Source": "API",
+  "BasePath": "_content/API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "API\\wwwroot",
+      "Source": "API",
+      "ContentRoot": "C:\\Users\\staff\\Desktop\\Eksamen\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\staff\\Desktop\\Eksamen\\API\\wwwroot\\images\\drivers\\lanstr01.webp",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\staff\\Desktop\\Eksamen\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "images/drivers/lanstr01.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\drivers\\lanstr01.webp"
+    },
+    {
+      "Identity": "C:\\Users\\staff\\Desktop\\Eksamen\\API\\wwwroot\\index.html",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\staff\\Desktop\\Eksamen\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
