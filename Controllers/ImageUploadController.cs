@@ -15,17 +15,18 @@ public class ImageUploadController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult PostImage(IFormFile formFile) // formFile-navnet bruker vi senere i MediaService.js
+    public IActionResult PostImage(IFormFile formFile)
     {
-        string webRootPath = environment.WebRootPath; // danner filstien til Web APIet frem til wwwroot-mappen
-        string absolutePath = Path.Combine($"{webRootPath}/images/drivers/{formFile.FileName}"); // kombinerer filstien i webRootPath med images + bildenavn
+
+        string webRootPath = environment.WebRootPath;
+        string absolutePath = Path.Combine($"{webRootPath}/images/drivers/{formFile.FileName}");
 
         using (var fileStream = new FileStream(absolutePath, FileMode.Create))
         {
-            formFile.CopyTo(fileStream); // bildet lagres til hvor absolutePath er satt
+            formFile.CopyTo(fileStream);
         }
 
-        return Ok();
+        return Ok(); // Return the file name or any relevant information
     }
 
     [HttpGet]
