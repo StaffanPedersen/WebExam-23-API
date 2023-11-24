@@ -1,9 +1,11 @@
 using API.Contexts;
 using Microsoft.EntityFrameworkCore;
 
- 
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+
 
 // Add services to the container.
 builder.Services.AddDbContext<APIContext>(options => options.UseSqlite("Data Source=Databases/API.db"));
@@ -35,6 +37,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+
 
 app.UseHttpsRedirection();
 
