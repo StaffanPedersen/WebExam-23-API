@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Skrivebord\\eksamen-git\\API\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\Admin\\OneDrive\\Skrivebord\\eksamen-git\\API\\wwwroot\\images\\drivers\\carsai01.webp",
       "PackagePath": "staticwebassets\\images\\drivers\\carsai01.webp"
     },

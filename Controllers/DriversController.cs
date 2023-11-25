@@ -35,12 +35,32 @@ public class DriversController : ControllerBase
     }
 
     [HttpGet("{id}")]
-
     public async Task<ActionResult<Driver>> Get(int id)
     {
         try
         {
             Driver? driver = await context.Drivers.FindAsync(id);
+            if (driver != null)
+            {
+                return Ok(driver);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+        catch
+        {
+            return StatusCode(500);
+        }
+    }
+
+    [HttpGet("byName/{name}")]
+    public async Task<ActionResult<Driver>> GetByName(string name)
+    {
+        try
+        {
+            Driver? driver = await context.Drivers.FirstOrDefaultAsync(d => d.Name == name);
             if (driver != null)
             {
                 return Ok(driver);

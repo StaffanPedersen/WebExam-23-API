@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 public class ImageUploadController : ControllerBase
 {
 
-    private readonly IWebHostEnvironment environment; // objekt vi bruker for å få tak i den korrekte filstien til hele Web APIet (ps! ikke det samme som endepunkt-url)
+    private readonly IWebHostEnvironment environment; 
 
     public ImageUploadController(IWebHostEnvironment _environment)
     {
@@ -26,7 +26,7 @@ public class ImageUploadController : ControllerBase
             formFile.CopyTo(fileStream);
         }
 
-        return Ok(); // Return the file name or any relevant information
+        return Ok();
     }
 
     [HttpGet]

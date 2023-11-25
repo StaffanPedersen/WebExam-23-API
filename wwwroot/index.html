@@ -1,14 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API for sjåfører</title>
+    <title>API Informasjon</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="http://localhost:5173/driver">Hjem</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <h1>API Informasjon</h1>
+
+        <h2>DriversController</h2>
+
+        <h3>GET /api/Drivers</h3>
+        <p>Hent en liste over alle sjåfører.</p>
+        <code>
+            [HttpGet]<br>
+            public async Task&lt;ActionResult&lt;List&lt;Driver&gt;&gt;&gt; Get()
+        </code>
+        <p><strong>Data Format (Response):</strong></p>
+        <pre>
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "age": 30,
+        "nationality": "Norwegian",
+        "image": "path/to/image.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Jane Doe",
+        "age": 28,
+        "nationality": "Swedish",
+        "image": "path/to/image2.jpg"
+    },
+    ...
+]
+        </pre>
+
+        <h3>GET /api/Drivers/{id}</h3>
+        <p>Hent detaljer om en spesifikk sjåfør ved ID.</p>
+        <code>
+            [HttpGet("{id}")]<br>
+            public async Task&lt;ActionResult&lt;Driver&gt;&gt; Get(int id)
+        </code>
+
+        <h3>GET /api/Drivers/byName/{name}</h3>
+        <p>Hent detaljer om en spesifikk sjåfør ved navn.</p>
+        <code>
+            [HttpGet("byName/{name}")]<br>
+            public async Task&lt;ActionResult&lt;Driver&gt;&gt; GetByName(string name)
+        </code>
+
+        <h3>POST /api/Drivers</h3>
+        <p>Opprett en ny sjåfør.</p>
+        <code>
+            [HttpPost]<br>
+            public async Task&lt;ActionResult&lt;Driver&gt;&gt; Post(Driver driver)
+        </code>
+
+        <h3>PUT /api/Drivers/{id}</h3>
+        <p>Oppdater detaljer om en spesifikk sjåfør ved ID.</p>
+        <code>
+            [HttpPut("{id}")]<br>
+            public async Task&lt;ActionResult&lt;Driver&gt;&gt; Put(int id, Driver driver)
+        </code>
+
+        <h3>DELETE /api/Drivers/{id}</h3>
+        <p>Slett en spesifikk sjåfør ved ID.</p>
+        <code>
+            [HttpDelete("{id}")]<br>
+            public async Task&lt;ActionResult&lt;Driver&gt;&gt; Delete(int id)
+        </code>
+
+        <h2>ImageUploadController</h2>
+
+        <h3>POST /api/ImageUpload</h3>
+        <p>Last opp et bilde for en sjåfør.</p>
+        <code>
+            [HttpPost]<br>
+            public IActionResult PostImage(IFormFile formFile)
+        </code>
+        <p><strong>Data Format (Response):</strong></p>
+        <p>Upon successful image upload, returns HTTP 200 OK.</p>
+
+        <h3>GET /api/ImageUpload</h3>
+        <p>Testpunkt for bildeopplastingskontroller.</p>
+        <code>
+            [HttpGet]<br>
+            public string Get()
+        </code>
+        <p><strong>Data Format (Response):</strong></p>
+        <p>Returns a simple string message for testing purposes.</p>
+
+    </div>
 
 </body>
 
-</html> 
+</html>

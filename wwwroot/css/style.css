@@ -1,0 +1,46 @@
+/* wwwroot/css/style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f8f8f8;
+}
+a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: thistle;
+  padding: 15px;
+  border-radius: 5px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+code {
+  background-color: #f4f4f4;
+  padding: 2px 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

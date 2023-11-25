@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TpQJl5dwJ5OFq2/UWIN/2iyoDZdDmGc8MFK9tzf1xjI=",
+  "Hash": "n5R9mP356StrN5UXse88bKuB14qjvjv/X03Mdjc7La0=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Skrivebord\\eksamen-git\\API\\wwwroot\\css\\style.css",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Skrivebord\\eksamen-git\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
     {
       "Identity": "C:\\Users\\Admin\\OneDrive\\Skrivebord\\eksamen-git\\API\\wwwroot\\images\\drivers\\carsai01.webp",
       "SourceId": "API",
