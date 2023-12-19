@@ -208,3 +208,4 @@ C:\Users\Admin\OneDrive\Skrivebord\eksamen-git\API\obj\Debug\net7.0\refint\API.d
 C:\Users\Admin\OneDrive\Skrivebord\eksamen-git\API\obj\Debug\net7.0\API.pdb
 C:\Users\Admin\OneDrive\Skrivebord\eksamen-git\API\obj\Debug\net7.0\API.genruntimeconfig.cache
 C:\Users\Admin\OneDrive\Skrivebord\eksamen-git\API\obj\Debug\net7.0\ref\API.dll
+C:\Users\Admin\OneDrive\Skrivebord\eksamen-git\API\obj\Debug\net7.0\API.sourcelink.json
